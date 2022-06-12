@@ -1,0 +1,251 @@
+/* Style Sheet for Project 2 */
+.a1 {
+     color: white;
+     background-color: transparent;
+     text-decoration: none;
+}
+
+.button {
+     font-size: 20px;
+     padding: 5px;
+     color: white;
+     border: 2px solid green;
+     border-radius: 5px;
+     text-decoration: none;
+     cursor: pointer;
+     transition: all 0.3s ease-out;
+}
+
+.body-background {
+     background-color: blanchedalmond;
+     height: 200px;
+     width: 100%;
+}
+
+.center-left {
+     position: absolute;
+     top: 25%;
+     left: 10%;
+}
+
+.container {
+     position: relative;
+     text-align: center;
+     color: white;
+}
+
+.h2-style {
+     color: olive;
+     font-family: 'Brush Script MT', cursive;
+     font-size: 32px;
+}
+
+.wrapper-header {
+     display: grid;
+     grid-template-columns: 40% 60%;
+     grid-template-rows: auto auto;
+}
+
+.header-row-span-2 {
+     grid-row: 1 / span 2;
+}
+
+.header-class {
+     height: 150px;
+     width: 100%;
+}
+   
+  .site-title {
+     width: 50%;
+     text-align: center;
+  }
+
+  .sub-title {
+     width: 50%;
+     text-align: center;
+}
+
+.logo-img {
+     width: 150px;
+     height: 150px;
+     border-radius: 25px;
+
+     box-shadow: 2px 2px olive;
+}
+
+.coupon-background {
+     background-color: burlywood;
+     text-align: left;
+     height: 50px;
+     margin-right: 0;
+     padding-right: 0;
+}
+
+.body-img {
+     height: 550px;
+     width: 100%;
+}
+
+.lotion-img {
+     height: 250px;
+     width: 300px}
+
+
+.product-desc {
+     height: 325px;
+     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.item-content {
+     float: left;
+     padding-left: 10%;
+     text-align: center;
+
+}
+
+.item-display {
+     height: 250px;
+     width: 250px;}
+     
+
+.overlay {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: rgba(0, 0, 0, 0.7);
+     transition: opacity 500ms;
+     visibility: hidden;
+     opacity: 0;
+}
+
+.overlay:target {
+     visibility: visible;
+     opacity: 1;
+}
+
+.popup {
+     margin: 50px auto;
+     padding: 20px;
+     background: indianred;
+     border-radius: 5px;
+     width: 30%;
+     position: relative;
+     transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+     margin-top: 0;
+     color: #333;
+     font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+     position: absolute;
+     top: 20px;
+     right: 30px;
+     transition: all 200ms;
+     font-size: 30px;
+     font-weight: bold;
+     text-decoration: none;
+     color: #333;
+}
+
+.popup .close:hover {
+     color: #06D85F;
+}
+
+.popup .content {
+     max-height: 30%;
+     overflow: auto;
+}
+.wrapper-stengthen {
+     display: grid;
+     grid-template-columns: 50% 50%;
+}
+.wrapper-three-lotions {
+     display: grid;
+     grid-template-columns: repeat(3, 33%);
+}
+
+
+.wrapper-lotion-display {
+     display: grid;
+     grid-template-columns: 60% 40%;
+     grid-template-rows: auto auto auto auto auto auto;
+}
+
+.wrapper-lotion-display > div {
+     background-color: #ddd;
+}
+
+.wrapper-col-span-2 {
+     grid-column: 1 / span 2;
+}
+
+.wrapper-row-span-3 {
+     grid-row: 1 / span 3;
+}
+.wapper-row-span-2 {
+     grid-row: 1 / span 2;
+}
+
+.wrapper-gift-sets {
+     display: grid;
+     grid-template-columns: auto auto auto;
+}
+
+.wrapper-cust-service {
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     text-align: center;
+}
+
+/* Tooltip container */
+.tooltip {
+     position: relative;
+     display: inline-block;
+     border-bottom: 1px dotted black;
+     /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+     visibility: hidden;
+     width: 120px;
+     background-color: black;
+     color: #fff;
+     text-align: center;
+     padding: 5px 0;
+     border-radius: 6px;
+
+     /* Position the tooltip text - see examples below! */
+     position: absolute;
+     z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+     visibility: visible;
+}
+
+#scroll-container {
+     overflow: hidden;
+}
+
+#scroll-text {
+     /* animation properties */
+     transform: translateX(90%);
+
+     animation: my-animation 12s linear infinite;
+}
+
+@keyframes my-animation {
+     from {
+          transform: translateX(90%);
+     }
+    to {
+          transform: translateX(-90%);
+     }
+}
